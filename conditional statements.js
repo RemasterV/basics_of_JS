@@ -10,8 +10,22 @@ if (typeof b == "number" && !isNaN(b)) {
 }
 else
 {
-        console.log("Упс, кажется, вы ошиблись")
+    console.log("Упс, кажется, вы ошиблись")
 }
 
+number_inp = 42;
+type_num = typeof number_inp;
+switch (type_num){
+    case "number":
+        console.log(`${number_inp} число`);
+        break;
+    case "string":
+        console.log(`${number_inp} строка`);
+        break;
+    case "boolean":
+        console.log(`${number_inp} Булев тип`);
+        break;
+    default:
+        console.log(`${number_inp} Не понятно`);
 
-
+}
